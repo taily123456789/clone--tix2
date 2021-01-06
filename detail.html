@@ -1,0 +1,3070 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SÓI 100% - 100% WOLF - (P)</title>
+
+    <link rel="icon" href="./images/white-logo.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+
+<body>
+    <header class="header header--detail">
+        <div class="header--detail__go-home">
+            <img src="./images/Icon/left-arrow.png" alt="back" onclick="backToHome()">
+        </div>
+        <div class="header__left">
+            <a href="./index.html" class="header__logo"><img src="./images/web-logo.png" alt="logo" /></a>
+        </div>
+        <div class="header__middle">
+            <a href="./index.html#filmBlock">Lịch Chiếu</a>
+            <a href="./index.html#cinemaBlock">Cụm Rạp</a>
+            <a href="./index.html#newsBlock">Tin Tức</a>
+            <a href="./index.html#appBlock">Ứng Dụng</a>
+        </div>
+        <div class="header__right">
+            <div class="login-btn">
+                <img src="./images/icon/avatar.png" alt="user" />
+                <span onclick="toLoginPage()">Đăng Nhập</span>
+            </div>
+
+            <div class="header__location-select" id="location-select">
+                <div class="select-selected">Hồ Chí Minh</div>
+                <div class="select-items select-hide">
+
+                    <div data-id="HCM">Hồ Chí Minh</div>
+
+                    <div data-id="HNoi">Hà Nội</div>
+
+                    <div data-id="DN">Đà Nẵng</div>
+
+                    <div data-id="HP">Hải Phòng</div>
+
+                    <div data-id="BH">Biên Hòa</div>
+
+                    <div data-id="NT">Nha Trang</div>
+
+                    <div data-id="BD">Bình Dương</div>
+
+                    <div data-id="PT">Phan Thiết</div>
+
+                    <div data-id="HL">Hạ Long</div>
+
+                    <div data-id="CT">Cần Thơ</div>
+
+                    <div data-id="VT">Vũng Tàu</div>
+
+                    <div data-id="QNhon">Quy Nhơn</div>
+
+                    <div data-id="Hue">Huế</div>
+
+                    <div data-id="LX">Long Xuyên</div>
+
+                    <div data-id="TN">Thái Nguyên</div>
+
+                    <div data-id="BMT">Buôn Ma Thuột</div>
+
+                    <div data-id="BG">Bắc Giang</div>
+
+                    <div data-id="BT">Bến Tre</div>
+
+                    <div data-id="VT">Việt Trì</div>
+
+                    <div data-id="NB">Ninh Bình</div>
+
+                    <div data-id="Vinh">Vinh</div>
+
+                    <div data-id="BL">Bảo Lộc</div>
+
+                    <div data-id="DL">Đà Lạt</div>
+
+                    <div data-id="TV">Trà Vinh</div>
+
+                    <div data-id="YB">Yên Bái</div>
+
+                    <div data-id="KG">Kiên Giang</div>
+
+                    <div data-id="VL">Vĩnh Long</div>
+
+                    <div data-id="CM">Cà Mau</div>
+
+                    <div data-id="HG">Hậu Giang</div>
+
+                    <div data-id="TN">Tây Ninh</div>
+
+                    <div data-id="TQ">Tuyên Quang</div>
+
+                    <div data-id="TH">Thanh Hóa</div>
+
+                    <div data-id="ND">Nam Định</div>
+
+                    <div data-id="HD">Hải Dương</div>
+
+                    <div data-id="GL">Gia Lai</div>
+
+                    <div data-id="HT">Hà Tĩnh</div>
+
+                    <div data-id="PY">Phú Yên</div>
+
+                    <div data-id="BL">Bạc Liêu</div>
+
+                    <div data-id="LA">Long An</div>
+
+                    <div data-id="DH">Đồng Hới</div>
+
+                    <div data-id="HNam">Hà Nam</div>
+
+                    <div data-id="BN">Bắc Ninh</div>
+
+                    <div data-id="QT">Quảng Trị</div>
+
+                    <div data-id="KT">Kon Tum</div>
+
+                    <div data-id="ST">Sóc Trăng</div>
+
+                    <div data-id="SL">Sơn La</div>
+
+                    <div data-id="LS">Lạng Sơn</div>
+
+                    <div data-id="QNgai">Quảng Ngãi</div>
+
+                    <div data-id="MT">Mỹ Tho</div>
+
+                    <div data-id="DT">Đồng Tháp</div>
+
+                    <div data-id="HY">Hưng Yên</div>
+
+                </div>
+            </div>
+
+            <div class="header__side-menu-btn" id="sideMenuBtn">
+                <img src="./images/icon/menu-options.png" alt="menu" />
+            </div>
+
+            <div class="header__side-menu" id="sideMenu">
+                <div class="header__side-menu__wrapper">
+                    <div class="login-btn">
+                        <img src="./images/icon/avatar.png" alt="user" />
+                        <span onclick="toLoginPage()">Đăng Nhập</span>
+
+                        <img src="./images/Icon/next-session.png" alt="close" class="header__side-menu__close-btn"
+                            id="closeSideMenuBtn" />
+                    </div>
+
+                    <a id="sideMenuLink" href="#filmBlock">Lịch Chiếu</a>
+                    <a id="sideMenuLink" href="#cinemaBlock">Cụm Rạp</a>
+                    <a id="sideMenuLink" href="#newsBlock">Tin Tức</a>
+                    <a id="sideMenuLink" href="#appBlock">Ứng Dụng</a>
+                    <a id="modalBtn">Hồ Chí Minh</a>
+
+                    <div class="modal" id="modalLocation" data-target="locationWrapper">
+                        <div class="modal-content">
+                            <div class="modal-wrapper" id="locationWrapper">
+                                <div data-id="HCM">Hồ Chí Minh</div>
+
+                                <div data-id="HNoi">Hà Nội</div>
+
+                                <div data-id="DN">Đà Nẵng</div>
+
+                                <div data-id="HP">Hải Phòng</div>
+
+                                <div data-id="BH">Biên Hòa</div>
+
+                                <div data-id="NT">Nha Trang</div>
+
+                                <div data-id="BD">Bình Dương</div>
+
+                                <div data-id="PT">Phan Thiết</div>
+
+                                <div data-id="HL">Hạ Long</div>
+
+                                <div data-id="CT">Cần Thơ</div>
+
+                                <div data-id="VT">Vũng Tàu</div>
+
+                                <div data-id="QNhon">Quy Nhơn</div>
+
+                                <div data-id="Hue">Huế</div>
+
+                                <div data-id="LX">Long Xuyên</div>
+
+                                <div data-id="TN">Thái Nguyên</div>
+
+                                <div data-id="BMT">Buôn Ma Thuột</div>
+
+                                <div data-id="BG">Bắc Giang</div>
+
+                                <div data-id="BT">Bến Tre</div>
+
+                                <div data-id="VT">Việt Trì</div>
+
+                                <div data-id="NB">Ninh Bình</div>
+
+                                <div data-id="Vinh">Vinh</div>
+
+                                <div data-id="BL">Bảo Lộc</div>
+
+                                <div data-id="DL">Đà Lạt</div>
+
+                                <div data-id="TV">Trà Vinh</div>
+
+                                <div data-id="YB">Yên Bái</div>
+
+                                <div data-id="KG">Kiên Giang</div>
+
+                                <div data-id="VL">Vĩnh Long</div>
+
+                                <div data-id="CM">Cà Mau</div>
+
+                                <div data-id="HG">Hậu Giang</div>
+
+                                <div data-id="TN">Tây Ninh</div>
+
+                                <div data-id="TQ">Tuyên Quang</div>
+
+                                <div data-id="TH">Thanh Hóa</div>
+
+                                <div data-id="ND">Nam Định</div>
+
+                                <div data-id="HD">Hải Dương</div>
+
+                                <div data-id="GL">Gia Lai</div>
+
+                                <div data-id="HT">Hà Tĩnh</div>
+
+                                <div data-id="PY">Phú Yên</div>
+
+                                <div data-id="BL">Bạc Liêu</div>
+
+                                <div data-id="LA">Long An</div>
+
+                                <div data-id="DH">Đồng Hới</div>
+
+                                <div data-id="HNam">Hà Nam</div>
+
+                                <div data-id="BN">Bắc Ninh</div>
+
+                                <div data-id="QT">Quảng Trị</div>
+
+                                <div data-id="KT">Kon Tum</div>
+
+                                <div data-id="ST">Sóc Trăng</div>
+
+                                <div data-id="SL">Sơn La</div>
+
+                                <div data-id="LS">Lạng Sơn</div>
+
+                                <div data-id="QNgai">Quảng Ngãi</div>
+
+                                <div data-id="MT">Mỹ Tho</div>
+
+                                <div data-id="DT">Đồng Tháp</div>
+
+                                <div data-id="HY">Hưng Yên</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content content--detail">
+        <div class="content--detail__poster">
+            <div class="content--detail__blur">
+                <img src="./images/Detail/soi-100-100-wolf-p-15927180593840.png" alt="banner" />
+                <div class="play-btn">
+                    <img src="./images/icon/play-video.png" alt="" />
+                </div>
+            </div>
+            <div class="content--detail__gradient"></div>
+            <div class="content--detail__film-intro">
+                <div class="content--detail__image">
+                    <img src="./images/detail/wofl-100.png" alt="sep" />
+                    <div class="play-btn">
+                        <img src="./images/icon/play-video.png" alt="" />
+                    </div>
+                </div>
+                <div class="content--detail__info">
+                    <p>26.06.2020</p>
+                    <h1>
+                        <div class="green-label">P</div>SÓI 100% - 100% WOLF -
+                    </h1>
+                    <span>94 phút - 0 IMDb - 2D/Digital</span>
+                    <button>Mua vé</button>
+                </div>
+                <div class="content--detail__rating">
+                    <div>
+                        <div class="content--detail__box">
+                            <svg>
+                                <circle cx="50%" cy="50%" r="61px"></circle>
+                                <circle cx="50%" cy="50%" r="61px"></circle>
+                            </svg>
+                            <div class="content--detail__point">8.7</div>
+                        </div>
+                        <div class="content--detail__star">
+                            <img src="./images/icon/star1.png" alt="">
+                            <img src="./images/icon/star1.png" alt="">
+                            <img src="./images/icon/star1.png" alt="">
+                            <img src="./images/icon/star1.png" alt="">
+                            <img src="./images/icon/star1.2.png" alt="">
+                        </div>
+                        <div class="content--detail__comment-amount">
+                            52 người đánh giá
+                        </div>
+                    </div>
+                </div>
+                <span class="filmBlock__film-rating">
+                    <p class="filmBlock__film-score">8.7</p>
+                    <p class="filmBlock__film-star">
+
+                        <img src="../../../build/images/icon/star1.png" alt="">
+
+                        <img src="../../../build/images/icon/star1.png" alt="">
+
+                        <img src="../../../build/images/icon/star1.png" alt="">
+
+                        <img src="../../../build/images/icon/star1.png" alt="">
+
+                        <img src="../../../build/images/icon/star1.2.png" alt="">
+                    </p>
+                </span>
+            </div>
+        </div>
+
+        <div class="content--detail__film-detail">
+            <div class="content--detail__info-mobile">
+                <p>26.06.2020</p>
+                <p>SÓI 100% - 100% WOLF - (P)</p>
+                <p>96 phút - 0 IMDb - 2D/Digital</p>
+            </div>
+
+            <div class="tabpanel hide-on-mobile">
+                <div class="tabpanel__header content--detail__tab-header">
+                    <div class="tab-link defaultOpen active content--detail__tablinks" data-control="showtimes">
+                        Lịch Chiếu
+                    </div>
+
+                    <div class="tab-link content--detail__tablinks" data-control="infomation">
+                        Thông Tin
+                    </div>
+
+                    <div class="tab-link content--detail__tablinks" data-control="reviews">
+                        Đánh Giá
+                    </div>
+                </div>
+
+                <div class="tabpanel__body">
+                    <div id="showtimes" class="tab-content ">
+                        <div class="tabpanel content--detail__cinema-container">
+                            <div class="tabpanel__header content--detail__cinema-list">
+                                <div class="tab-link defaultOpen active content--detail__cinema-item"
+                                    data-control="cgv-tab">
+                                    <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv" />
+                                    <div class="content--detail__cinema-info">
+                                        <p>CGV</p>
+                                        <div class="content--detail__cinema-promotion">
+                                            <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                            <span>x3 vé CGV 79k/vé</span>
+                                            <div class="content--detail__cinema-tooltip">
+                                                <p>x3 vé CGV 79k/vé</p>
+                                                <ul>
+                                                    <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                    <li>Áp dụng cho tất cả các khách hàng</li>
+                                                    <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                    <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu trong
+                                                        phòng
+                                                        chiếu đặc biệt</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-link content--detail__cinema-item" data-control="bhd-tab">
+                                    <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="bhd" />
+
+                                    <div class="content--detail__cinema-info">
+                                        <p>BHD Star Cineplex</p>
+                                        <div class="content--detail__cinema-promotion">
+                                            <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                            <span>x3 vé BHD Star 59k/vé</span>
+                                            <div class="content--detail__cinema-tooltip">
+                                                <p>x3 vé BHD Star 59k/vé</p>
+                                                <ul>
+                                                    <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                    <li>Áp dụng cho tất cả các khách hàng</li>
+                                                    <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                    <li>Không áp dụng cho loại ghế sofa</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabpanel__body  content--detail__cinema-detail">
+                                <div id="cgv-tab" class="tab-content">
+
+                                    <div class="tabpanel" data-content="tab-content">
+                                        <div class="tabpanel__header content--detail__day-wrapper ">
+                                            <div class="content--detail__day-list">
+                                                <div class="tab-link defaultOpen active content--detail__day"
+                                                    data-control="cgv_d1">
+                                                    <p>Thứ 2</p>
+                                                    <span>30</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day" data-control="cgv_d2">
+                                                    <p>Thứ 3</p>
+                                                    <span>31</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day" data-control="cgv_d3">
+                                                    <p>Thứ 4</p>
+                                                    <span>1</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day" data-control="cgv_d4">
+                                                    <p>Thứ 5</p>
+                                                    <span>2</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d5">
+                                                    <p>Thứ 6</p>
+                                                    <span>3</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d6">
+                                                    <p>Thứ 7</p>
+                                                    <span>4</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d7">
+                                                    <p>Chủ Nhật</p>
+                                                    <span>5</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d8">
+                                                    <p>Thứ 2</p>
+                                                    <span>6</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d9">
+                                                    <p>Thứ 3</p>
+                                                    <span>7</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d10">
+                                                    <p>Thứ 4</p>
+                                                    <span>8</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d11">
+                                                    <p>Thứ 5</p>
+                                                    <span>9</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d12">
+                                                    <p>Thứ 6</p>
+                                                    <span>10</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d13">
+                                                    <p>Thứ 7</p>
+                                                    <span>11</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="cgv_d14">
+                                                    <p>Chủ Nhật</p>
+                                                    <span>12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabpanel__body content--detail__showtime-wrapper">
+                                            <div id="cgv_d1" class="tab-content content--detail__showtime-list">
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                                Mall</span>
+                                                            <div class="">
+                                                                <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                                    Hưng Quận 7 TP.
+                                                                    Hồ Chí
+                                                                    Minh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                                Pearl</span>
+                                                            <div class="">
+                                                                <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                                    Điền, Quận 2, TP.
+                                                                    Hồ Chí
+                                                                    Minh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Liberty
+                                                                Citypoint</span>
+                                                            <div class="">
+                                                                <p>Tầng M - 1, khách sạn Liberty Center Saigon
+                                                                    Citypoint, 59 - 61
+                                                                    Pasteur, Quận 1</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div id="cgv_d2" class="tab-content content--detail__showtime-list">
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                                Pearl</span>
+                                                            <div class="">
+                                                                <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                                    Điền, Quận 2, TP.
+                                                                    Hồ Chí
+                                                                    Minh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Liberty
+                                                                Citypoint</span>
+                                                            <div class="">
+                                                                <p>Tầng M - 1, khách sạn Liberty Center Saigon
+                                                                    Citypoint, 59 - 61
+                                                                    Pasteur, Quận 1</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="cgv_d3" class="tab-content content--detail__showtime-list">
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                                Mall</span>
+                                                            <div class="">
+                                                                <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                                    Hưng Quận 7 TP.
+                                                                    Hồ Chí
+                                                                    Minh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                                Pearl</span>
+                                                            <div class="">
+                                                                <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                                    Điền, Quận 2, TP.
+                                                                    Hồ Chí
+                                                                    Minh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Liberty
+                                                                Citypoint</span>
+                                                            <div class="">
+                                                                <p>Tầng M - 1, khách sạn Liberty Center Saigon
+                                                                    Citypoint, 59 - 61
+                                                                    Pasteur, Quận 1</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="cgv_d4" class="tab-content content--detail__showtime-list">
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/cgv-cinema.jpg" alt="cgv">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                                Mall</span>
+                                                            <div class="">
+                                                                <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                                    Hưng Quận 7 TP.
+                                                                    Hồ Chí
+                                                                    Minh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div id="cgv_d5" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d6" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d7" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d8" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d9" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d10" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d11" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d12" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d13" class="tab-content">
+                                            </div>
+                                            <div id="cgv_d14" class="tab-content">
+                                            </div> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="bhd-tab" class="tab-content">
+                                    <div class="tabpanel" data-content="tab-content">
+                                        <div class="tabpanel__header content--detail__day-wrapper ">
+                                            <div class="content--detail__day-list">
+                                                <div class="tab-link defaultOpen active content--detail__day"
+                                                    data-control="bhd_d1">
+                                                    <p>Thứ 2</p>
+                                                    <span>30</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day" data-control="bhd_d2">
+                                                    <p>Thứ 3</p>
+                                                    <span>31</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d3">
+                                                    <p>Thứ 4</p>
+                                                    <span>1</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d4">
+                                                    <p>Thứ 5</p>
+                                                    <span>2</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d5">
+                                                    <p>Thứ 6</p>
+                                                    <span>3</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d6">
+                                                    <p>Thứ 7</p>
+                                                    <span>4</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d7">
+                                                    <p>Chủ Nhật</p>
+                                                    <span>5</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d8">
+                                                    <p>Thứ 2</p>
+                                                    <span>6</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d9">
+                                                    <p>Thứ 3</p>
+                                                    <span>7</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d10">
+                                                    <p>Thứ 4</p>
+                                                    <span>8</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d11">
+                                                    <p>Thứ 5</p>
+                                                    <span>9</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d12">
+                                                    <p>Thứ 6</p>
+                                                    <span>10</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d13">
+                                                    <p>Thứ 7</p>
+                                                    <span>11</span>
+                                                </div>
+
+                                                <div class="tab-link content--detail__day disable"
+                                                    data-control="bhd_d14">
+                                                    <p>Chủ Nhật</p>
+                                                    <span>12</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tabpanel__body content--detail__showtime-wrapper">
+                                            <div id="bhd_d1" class="tab-content content--detail__showtime-list">
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/bhd-star.jpg" alt="bhd">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                                Vincom Quang Trung</span>
+                                                            <div class="">
+                                                                <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/bhd-star.jpg" alt="bhd">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                                Vincom Lê Văn Việt</span>
+                                                            <div class="">
+                                                                <p>L4-Vincom Plaza, 50 Lê Văn Việt, Q.9</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/bhd-star.jpg" alt="bhd">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__bhd">BHD Star</span> - Phạm
+                                                                Hùng</span>
+                                                            <div class="">
+                                                                <p>L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Digital</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                        </div>
+
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 14:34</a>
+                                                            <a><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div id="bhd_d2" class="tab-content content--detail__showtime-list">
+                                                <div class="content--detail__showtime-item">
+                                                    <div class="content--detail__showtime-header">
+                                                        <img src="./images/bhd-star.jpg" alt="bhd">
+
+                                                        <div class="cinemaBlock__wrap">
+                                                            <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                                Vincom Quang Trung</span>
+                                                            <div class="">
+                                                                <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                                <a class="content--detail__cinema-map">[Bản đồ]</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                                        aria-hidden="false">
+                                                        <p>2D Lồng tiếng</p>
+                                                        <div class="cinemaBlock__session">
+                                                            <a><span>11:00</span> ~ 12:34</a>
+                                                            <a><span>13:00</span> ~ 15:34</a>
+                                                            <a><span>14:00</span> ~ 16:34</a>
+                                                            <a onclick="toLoginPage()"><span>15:00</span> ~ 16:34</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!--<div id="bhd_d3" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d4" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                             <div id="bhd_d5" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d6" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d7" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d8" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d9" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d10" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d11" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d12" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d13" class="tab-content content--detail__showtime-list">
+                                            </div>
+                                            <div id="bhd_d14" class="tab-content content--detail__showtime-list">
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="infomation" class="tab-content">
+                        <div class="content--detail__info-wrapper">
+                            <div class="content--detail__info-left">
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Ngày công chiếu</p>
+                                    <p class="content--detail__info-content">26.06.2020</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Đạo diễn</p>
+                                    <p class="content--detail__info-content">Alexs Stadermann</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Diễn viên</p>
+                                    <p class="content--detail__info-content"></p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Thể Loại</p>
+                                    <p class="content--detail__info-content">Hoạt hình, Gia đình</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Định dạng</p>
+                                    <p class="content--detail__info-content">2D/Digital</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Quốc Gia SX</p>
+                                    <p class="content--detail__info-content">Mỹ</p>
+                                </div>
+                            </div>
+                            <div class="content--detail__info-right">
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Nội dung</p>
+                                </div>
+                                <div class="content--detail__film-discription">
+                                    <p class="content--detail__info-content--full">Phim là câu chuyện kể về Freddy Lupin
+                                        -
+                                        người thừa kế một gia đình sói quý tộc. Vào sinh nhật lần thứ 13 của mình,
+                                        Freddy phải thực hiện nghi lễ trưởng thành và biến hình thành sói trước sự chứng
+                                        kiến của các thành viên trong gia tộc. Thế nhưng, cậu lại biến thành một chú chó
+                                        lông xù (Poodle). Trong lúc tuyệt vọng và nghĩ rằng cuộc đời đã chấm hết, Freddy
+                                        bắt đầu một cuộc phiêu lưu mới đầy thú vị và vui nhộn. Và rồi Freddy dần khám
+                                        phá ra sự thật về cái chết bí ẩn của cha mình, phát hiện ra một thợ săn người
+                                        sói đang lên kế hoạch tiêu diệt tất cả gia đình và bạn bè cậu. Với vẻ ngoài nhỏ
+                                        bé của một chú cún, liệu Freddy có ngăn chặn được âm mưu độc ác và chứng minh
+                                        mình là sói 100%?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="reviews" class="tab-content">
+                        <div class="content--detail__comment-box">
+                            <div class="content--detail__comment-box-left">
+                                <img src="./images/icon/avatar.png" alt="user" />
+                                <span>Bạn nghĩ gì về phim này?</span>
+                            </div>
+
+                            <div class="content--detail__comment-box-right">
+                                <img src="./images/icon/listStar.png" alt="star" />
+                            </div>
+                        </div>
+
+                        <div class="content--detail__user-comment-list">
+                            <div class="content--detail__user-comment-box">
+                                <div class="content--detail__user-comment-header">
+                                    <div class="content--detail__user-avatar">
+                                        <img src="./images/icon/user-avatar.jpg" alt="star" />
+                                        <div class="content--detail__user-info">
+                                            <p>Lalaland <img src="./images/icon/movieTicket.png" alt="star" /></p>
+                                            <span>4 giờ trước</span>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content--detail__user-rating">
+                                        <p>7</p>
+                                        <div>
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.2.png" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content--detail__user-comment-body">
+                                    <span>Phim cũng vui, giải trí thoải mái đầu óc , chứ không mới và đặc sắc. Riêng
+                                        về
+                                        rạp phim cinestar Quốc Thanh hôm nay thì phải cho điểm liệt, vì ghế quá bẩn,
+                                        bụi
+                                        đen. Mấy lần đi coi vô lúc tối ko để ý, nay tự tìm ghế ngồi nên chiếu flash
+                                        điện
+                                        thoại thấy sợ.</span>
+                                </div>
+                                <div class="content--detail__user-comment-footer">
+                                    <img src="./images/icon/like.png" alt="like" />
+                                    <span>0 Thích</span>
+                                </div>
+                            </div>
+
+                            <div class="content--detail__user-comment-box">
+                                <div class="content--detail__user-comment-header">
+                                    <div class="content--detail__user-avatar">
+                                        <img src="./images/icon/user-avatar.jpg" alt="star" />
+                                        <div class="content--detail__user-info">
+                                            <p>Lalaland <img src="./images/icon/movieTicket.png" alt="star" /></p>
+                                            <span>4 giờ trước</span>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content--detail__user-rating">
+                                        <p>7</p>
+                                        <div>
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.2.png" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content--detail__user-comment-body">
+                                    <span>Phim cũng vui, giải trí thoải mái đầu óc , chứ không mới và đặc sắc. Riêng
+                                        về
+                                        rạp phim cinestar Quốc Thanh hôm nay thì phải cho điểm liệt, vì ghế quá bẩn,
+                                        bụi
+                                        đen. Mấy lần đi coi vô lúc tối ko để ý, nay tự tìm ghế ngồi nên chiếu flash
+                                        điện
+                                        thoại thấy sợ.</span>
+                                </div>
+                                <div class="content--detail__user-comment-footer">
+                                    <img src="./images/icon/like.png" alt="like" />
+                                    <span>0 Thích</span>
+                                </div>
+                            </div>
+
+                            <button class="loadmore-btn">Xem thêm</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabpanel hide-on-desktop">
+                <div class="tabpanel__header content--detail__tab-header">
+                    <div class="tab-link defaultOpen active content--detail__tablinks" data-control="showtimes">
+                        Lịch Chiếu
+                    </div>
+
+                    <div class="tab-link content--detail__tablinks" data-control="infomation">
+                        Thông Tin
+                    </div>
+
+                    <div class="tab-link content--detail__tablinks" data-control="reviews">
+                        Đánh Giá
+                    </div>
+                </div>
+
+                <div class="tabpanel__body">
+                    <div id="showtimes" class="tab-content ">
+                        <div class="tabpanel">
+
+                            <div class="tabpanel__header content--detail__day-wrapper ">
+                                <div class="content--detail__day-list">
+                                    <div class="tab-link defaultOpen active content--detail__day" data-control="d1">
+                                        <p>T2</p>
+                                        <span>30</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day" data-control="d2">
+                                        <p>T3</p>
+                                        <span>31</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day" data-control="d3">
+                                        <p>T4</p>
+                                        <span>1</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day" data-control="d4">
+                                        <p>T5</p>
+                                        <span>2</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day " data-control="d5">
+                                        <p>T6</p>
+                                        <span>3</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day " data-control="d6">
+                                        <p>T7</p>
+                                        <span>4</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day " data-control="d7">
+                                        <p>CN</p>
+                                        <span>5</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d8">
+                                        <p>T2</p>
+                                        <span>6</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d9">
+                                        <p>T3</p>
+                                        <span>7</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d10">
+                                        <p>T4</p>
+                                        <span>8</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d11">
+                                        <p>T5</p>
+                                        <span>9</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d12">
+                                        <p>T6</p>
+                                        <span>10</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d13">
+                                        <p>T7</p>
+                                        <span>11</span>
+                                    </div>
+
+                                    <div class="tab-link content--detail__day disable" data-control="d14">
+                                        <p>CN</p>
+                                        <span>12</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tabpanel__body content--detail__showtime-wrapper">
+                                <div id="d1" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="d2" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="d3" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="d4" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="d5" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="d6" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div id="d7" class="tab-content content--detail__showtime-list">
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>CGV</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé CGV 79k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip" aria-hidden="true">
+                                                        <p>x3 vé CGV 79k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng vé 2D (VIP/Thường), suất chiếu cả tuần</li>
+                                                            <li>Không áp dụng ghế sweetbox, suất chiếu sớm, suất chiếu
+                                                                trong
+                                                                phòng
+                                                                chiếu đặc biệt</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Crescent
+                                                    Mall</span>
+                                                <div class="">
+                                                    <p>Lầu 5, Crescent Mall Đại lộ Nguyễn Văn Linh, Phú Mỹ
+                                                        Hưng Quận 7 TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Thảo Điền
+                                                    Pearl</span>
+                                                <div class="">
+                                                    <p>Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo
+                                                        Điền, Quận 2, TP.
+                                                        Hồ Chí
+                                                        Minh</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/cgv-cinema.jpg"
+                                                alt="cgv">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__cgv">CGV</span> - Vincom Thủ Đức</span>
+                                                <div class="">
+                                                    <p>Tầng 5, TTTM Vincom Thủ Đức, 216 Võ Văn Ngân, Phường Bình Thọ,
+                                                        Quận Thủ Đức
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content--detail__showtime-header accordion hideNextElementSibling">
+                                        <div class="content--detail__brand-wrapper">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd.png" alt="cgv">
+                                            <div class="content--detail__cinema-info">
+                                                <p>BHD Star Cineplex</p>
+                                                <div class="content--detail__cinema-promotion">
+                                                    <img class="exclam" src="./images/Icon/exclam.png" alt="!">
+                                                    <span>x3 vé BHD Star 59k/vé</span>
+                                                    <div class="content--detail__cinema-tooltip">
+                                                        <p>x3 vé BHD Star 59k/vé</p>
+                                                        <ul>
+                                                            <li>Áp dụng khi thanh toán bằng ZaloPay</li>
+                                                            <li>Áp dụng cho tất cả các khách hàng</li>
+                                                            <li>Áp dụng cho tất cả các suất chiếu</li>
+                                                            <li>Không áp dụng cho loại ghế sofa</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <img class="content--detail__icon-right"
+                                            src="./images/icon/arrow-right-session.png" alt="right">
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="content--detail__showtime-item" aria-hidden="true">
+                                        <div class="content--detail__cinema-header">
+                                            <img class="content--detail__cinema-logo" src="./images/bhd-star.jpg"
+                                                alt="bhd">
+                                            <div class="cinemaBlock__wrap">
+                                                <span><span class="cinemaBlock__bhd">BHD Star</span> -
+                                                    Vincom Quang Trung</span>
+                                                <div class="">
+                                                    <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="cinemaBlock__hide-on-click accordion clickMyParent"
+                                            aria-hidden="false">
+                                            <p>2D Digital</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                            </div>
+
+                                            <p>2D Lồng tiếng</p>
+                                            <div class="cinemaBlock__session">
+                                                <a><span>11:00</span><br> ~ 12:34</a>
+                                                <a><span>13:00</span><br> ~ 14:34</a>
+                                                <a><span>15:00</span><br> ~ 16:34</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--               <div id="d8" class="tab-content">
+                                            </div>
+                                            <div id="d9" class="tab-content">
+                                            </div>
+                                            <div id="d10" class="tab-content">
+                                            </div>
+                                            <div id="d11" class="tab-content">
+                                            </div>
+                                            <div id="d12" class="tab-content">
+                                            </div>
+                                            <div id="d13" class="tab-content">
+                                            </div>
+                                            <div id="d14" class="tab-content">
+                                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="infomation" class="tab-content">
+                        <div class="content--detail__info-wrapper">
+                            <div class="content--detail__info-left">
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Ngày công chiếu</p>
+                                    <p class="content--detail__info-content">26.06.2020</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Đạo diễn</p>
+                                    <p class="content--detail__info-content">Alexs Stadermann</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Diễn viên</p>
+                                    <p class="content--detail__info-content"></p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Thể Loại</p>
+                                    <p class="content--detail__info-content">Hoạt hình, Gia đình</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Định dạng</p>
+                                    <p class="content--detail__info-content">2D/Digital</p>
+                                </div>
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Quốc Gia SX</p>
+                                    <p class="content--detail__info-content">Mỹ</p>
+                                </div>
+                            </div>
+                            <div class="content--detail__info-right">
+                                <div class="content--detail__info-row">
+                                    <p class="content--detail__info-title">Nội dung</p>
+                                </div>
+                                <div class="content--detail__film-discription">
+                                    <p class="content--detail__info-content--full">Phim là câu chuyện kể về Freddy Lupin
+                                        -
+                                        người thừa kế một gia đình sói quý tộc. Vào sinh nhật lần thứ 13 của mình,
+                                        Freddy phải thực hiện nghi lễ trưởng thành và biến hình thành sói trước sự chứng
+                                        kiến của các thành viên trong gia tộc. Thế nhưng, cậu lại biến thành một chú chó
+                                        lông xù (Poodle). Trong lúc tuyệt vọng và nghĩ rằng cuộc đời đã chấm hết, Freddy
+                                        bắt đầu một cuộc phiêu lưu mới đầy thú vị và vui nhộn. Và rồi Freddy dần khám
+                                        phá ra sự thật về cái chết bí ẩn của cha mình, phát hiện ra một thợ săn người
+                                        sói đang lên kế hoạch tiêu diệt tất cả gia đình và bạn bè cậu. Với vẻ ngoài nhỏ
+                                        bé của một chú cún, liệu Freddy có ngăn chặn được âm mưu độc ác và chứng minh
+                                        mình là sói 100%?</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="reviews" class="tab-content">
+                        <div class="content--detail__comment-box">
+                            <div class="content--detail__comment-box-left">
+                                <img src="./images/icon/avatar.png" alt="user" />
+                                <span>Bạn nghĩ gì về phim này?</span>
+                            </div>
+
+                            <div class="content--detail__comment-box-right">
+                                <img src="./images/icon/listStar.png" alt="star" />
+                            </div>
+                        </div>
+
+                        <div class="content--detail__user-comment-list">
+                            <div class="content--detail__user-comment-box">
+                                <div class="content--detail__user-comment-header">
+                                    <div class="content--detail__user-avatar">
+                                        <img src="./images/icon/user-avatar.jpg" alt="star" />
+                                        <div class="content--detail__user-info">
+                                            <p>Lalaland <img src="./images/icon/movieTicket.png" alt="star" /></p>
+                                            <span>4 giờ trước</span>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content--detail__user-rating">
+                                        <p>7</p>
+                                        <div>
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.2.png" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content--detail__user-comment-body">
+                                    <span>Phim cũng vui, giải trí thoải mái đầu óc , chứ không mới và đặc sắc. Riêng
+                                        về
+                                        rạp phim cinestar Quốc Thanh hôm nay thì phải cho điểm liệt, vì ghế quá bẩn,
+                                        bụi
+                                        đen. Mấy lần đi coi vô lúc tối ko để ý, nay tự tìm ghế ngồi nên chiếu flash
+                                        điện
+                                        thoại thấy sợ.</span>
+                                </div>
+                                <div class="content--detail__user-comment-footer">
+                                    <img src="./images/icon/like.png" alt="like" />
+                                    <span>0 Thích</span>
+                                </div>
+                            </div>
+
+                            <div class="content--detail__user-comment-box">
+                                <div class="content--detail__user-comment-header">
+                                    <div class="content--detail__user-avatar">
+                                        <img src="./images/icon/user-avatar.jpg" alt="star" />
+                                        <div class="content--detail__user-info">
+                                            <p>Lalaland <img src="./images/icon/movieTicket.png" alt="star" /></p>
+                                            <span>4 giờ trước</span>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="content--detail__user-rating">
+                                        <p>7</p>
+                                        <div>
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.png" alt="star">
+                                            <img src="./images/Icon/star1.2.png" alt="star">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content--detail__user-comment-body">
+                                    <span>Phim cũng vui, giải trí thoải mái đầu óc , chứ không mới và đặc sắc. Riêng
+                                        về
+                                        rạp phim cinestar Quốc Thanh hôm nay thì phải cho điểm liệt, vì ghế quá bẩn,
+                                        bụi
+                                        đen. Mấy lần đi coi vô lúc tối ko để ý, nay tự tìm ghế ngồi nên chiếu flash
+                                        điện
+                                        thoại thấy sợ.</span>
+                                </div>
+                                <div class="content--detail__user-comment-footer">
+                                    <img src="./images/icon/like.png" alt="like" />
+                                    <span>0 Thích</span>
+                                </div>
+                            </div>
+
+                            <button class="loadmore-btn">Xem thêm</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer__tix">
+                    <p class="footer__title">TIX</p>
+                    <a href="#">FAQ</a>
+                    <a href="#">Thỏa thuận sử dụng</a>
+                    <a href="#">Brand Guidelines</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+                <div class="footer__partner">
+                    <p class="footer__title">ĐỐI TÁC</p>
+
+                    <div class="footer__partner-row">
+                        <a href="#"><img src="./images/partner/cgv.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/bhd.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/galaxycine.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/cinestar.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/lotte.png" alt="partner" /></a>
+                    </div>
+                    <div class="footer__partner-row">
+                        <a href="#"><img src="./images/partner/megags.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/bt.jpg" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/dongdacinema.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/TOUCH.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/cnx.jpg" alt="partner" /></a>
+                    </div>
+
+                    <div class="footer__partner-row">
+                        <a href="#"><img src="./images/partner/STARLIGHT.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/dcine.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/zalopay_icon.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/payoo.jpg" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/VCB.png" alt="partner" /></a>
+                    </div>
+                    <div class="footer__partner-row">
+                        <a href="#"><img src="./images/partner/AGRIBANK.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/VIETTINBANK.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/IVB.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/123go.png" alt="partner" /></a>
+                        <a href="#"><img src="./images/partner/laban.png" alt="partner" /></a>
+                    </div>
+                </div>
+                <div class="footer__app-social">
+                    <div class="footer__wrapper">
+                        <p class="footer__title">MOBILE APP</p>
+                        <img src="./images/app/apple-logo.png" alt="ios" />
+                        <img src="./images/app/android-logo.png" alt="adr" />
+                    </div>
+                    <div class="footer__wrapper">
+                        <p class="footer__title">SOCIAL</p>
+                        <img src="./images/social/facebook-logo.png" alt="fb" />
+                        <img src="./images/social/zalo-logo.png" alt="zl" />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="footer__row">
+                <div class="footer__company-logo">
+                    <img src="./images/zion-logo.jpg" alt="zion" />
+                </div>
+                <div class="footer__company-detail">
+                    <p>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</p>
+                    <p>
+                        Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ
+                        Chí Minh, Việt Nam.
+                    </p>
+                    <p>
+                        Giấy chứng nhận đăng ký kinh doanh số: 0101659783,
+                    </p>
+                    <p>
+                        đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế
+                        hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+                    </p>
+                    <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                    <p>Email: <a href="#">support@tix.vn</a></p>
+                </div>
+                <div class="footer__ministry">
+                    <img src="./images/bo-cong-thuong.png" alt="ministry" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
+    <!-- <script type="text/javascript" src="../src/scripts/app.js"></script> -->
+    <script type="module" src="../src/scripts/detail.js"></script>
+</body>
+
+</html>
